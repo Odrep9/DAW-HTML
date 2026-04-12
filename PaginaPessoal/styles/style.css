@@ -7,7 +7,8 @@
 /* Estilos do body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #eef5e9; /* Light green neutro */
+    background-color: #eef5e9;
+    /* Light green neutro */
     color: #1e2d1e;
     padding: 20px;
     line-height: 1.6;
@@ -45,7 +46,8 @@ a:hover {
 
 header {
     font-family: Impact, Arial Black, sans-serif;
-    background-color: #2d572c; /* Dark Cena green */
+    background-color: #2d572c;
+    /* Dark Cena green */
     color: white;
     padding: 25px;
     text-align: center;
@@ -81,7 +83,7 @@ nav {
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 25px;
-    box-shadow: 3px 6px rgba(0,0,0,0.1);
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav h2 {
@@ -104,7 +106,8 @@ nav ul li {
 }
 
 nav ul li a {
-    background-color: #e2d73b; /* Cena blue */
+    background-color: #e2d73b;
+    /* Cena blue */
     color: rgb(255, 255, 255);
     padding: 12px 20px;
     border-radius: 5px;
@@ -121,14 +124,32 @@ nav ul li a:hover {
 
 main {
     display: flex;
-    align-items: center;   /* alinha verticalmente */
-    gap: 20px;             /* espaço entre a imagem e o texto */
+    align-items: center;
+    /* alinha verticalmente */
+    gap: 20px;
+    /* espaço entre a imagem e o texto */
 }
 
 main p {
-    font-size: 0.9em;      /* texto mais pequeno */
-    color: #555;           /* cor mais subtil */
-    max-width: 500px;      /* limita largura para ficar mais clean */
+    font-size: 0.9em;
+    /* texto mais pequeno */
+    color: #555;
+    /* cor mais subtil */
+    max-width: 500px;
+    /* limita largura para ficar mais clean */
     line-height: 1.4;
 }
 
+
+#relogio {
+    font-family: 'Courier New', monospace;
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: inline-block;
+}
