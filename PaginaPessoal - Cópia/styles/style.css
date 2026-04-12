@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef5e9;
+    /* Light green neutro */
+    color: #1e2d1e;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Títulos */
+h1 {
+    font-size: 3em;
+    margin-bottom: 5px;
+    color: #aacda7;
+}
+
+h2 {
+    font-size: 2em;
+    color: #29571c;
+}
+
+/* Links */
+a {
+    color: rgba(126, 216, 128, 0.533) db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2980 b9;
+}
+
+.foto-cena {
+    height: 500px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+header {
+    font-family: Impact, Arial Black, sans-serif;
+    background-color: #2d572c;
+    /* Dark Cena green */
+    color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+footer {
+    background-color: #2a5221;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #ecf0f1;
+}
+
+footer a:hover {
+    color: #246b24;
+}
+
+nav {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2d572c;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 5px;
+}
+
+nav ul li a {
+    background-color: #e2d73b;
+    /* Cena blue */
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #246b24;
+    text-decoration: none;
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    /* alinha verticalmente */
+    gap: 20px;
+    /* espaço entre a imagem e o texto */
+}
+
+main p {
+    font-size: 0.9em;
+    /* texto mais pequeno */
+    color: #555;
+    /* cor mais subtil */
+    max-width: 500px;
+    /* limita largura para ficar mais clean */
+    line-height: 1.4;
+}
+
+
+#relogio {
+    font-family: 'Courier New', monospace;
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: inline-block;
+}
