@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página Pessoal John Cena">
+    <title>Página Pessoal - John Cena</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+
+    <script src="{{ url_for('static', filename='scripts/main.js') }}" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>John Cena</h1>
+        <p>"A true champion is not judged by adversity."</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home_page') }}">Home</a></li>
+            <li><a href="{{ url_for('apresentacao_page') }}">Apresentação</a></li>
+            <li><a href="{{ url_for('pessoal_page') }}">Dados Pessoais</a></li>
+            <li><a href="{{ url_for('formacao_page') }}">Formação</a></li>
+            <li><a href="{{ url_for('curriculum_page') }}">Curriculum</a></li>
+            <li><a href="{{ url_for('hobbies_page') }}">Hobbies</a></li>
+            <li><a href="{{ url_for('filmes_page') }}">Filmes Favoritos</a></li>
+            <li><a href="{{ url_for('localizacao_page') }}">Localização</a></li>
+        </ul>
+    </nav>
+
+    {% block title %}{% endblock %}
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+        <p>&copy; 2026 John Cena</p>
+    </footer>
+</body>
+
+</html>
