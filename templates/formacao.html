@@ -1,0 +1,73 @@
+{% extends "layout.html" %} {% block title %} <h2>Formação Académica</h2> {% endblock %} {% block content %} <h2>
+    Licenciatura em Gestão de Sistemas de Informação</h2>
+<section>
+    <h3>Notas Académicas - ESCE</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Semestre</th>
+                <th>Unidade Curricular</th>
+                <th>Nota</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="5">1º Semestre</td>
+                <td>Fundamentos de Programação</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Matemática Discreta</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>Sistemas de Informação</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>Competências Comunicacionais</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Introdução à Gestão</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td rowspan="4">2º Semestre</td>
+                <td>Programação Orientada a Objetos</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>Bases de Dados</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Desenvolvimento de Aplicações Web</td>
+                <td>Em curso</td>
+            </tr>
+            <tr>
+                <td>Estatística Aplicada</td>
+                <td>Em curso</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><strong>Média:</strong></td>
+                <td><strong>15,5</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+<p><strong>Instituição:</strong> <a href="https://www.esce.ips.pt" target="_blank">ESCE - IPS</a></p>
+<p><strong>Período:</strong> 2024 - presente</p>
+<p><strong>Descrição:</strong> Curso focado em sistemas de informação, bases de dados, desenvolvimento web e gestão de
+    projetos.</p>
+<hr>
+<h2>Ensino Secundário</h2> <!-- Criamos este container para controlar o layout -->
+<div class="seccao-secundario">
+    <div class="texto-secundario">
+        <p><strong>Instituição:</strong> Instituto Politécnico de Setúbal - Escola de Ciências Empresariais</p>
+        <p><strong>Período:</strong> 2020 - 2023</p>
+        <p><strong>Área:</strong> Ciências e Tecnologias</p>
+    </div> <img src="{{ url_for('static', filename='images/image.png') }}" alt="Fotografia de IPS" class="foto-ips">
+</div> {% endblock %}

@@ -1,0 +1,14 @@
+{% extends "layout.html" %} {% block title %} <h2>Detalhe do Filme</h2> {% endblock %} {% block content %} <table
+    border="1">
+    <tr>
+        <th>Título:</th>
+        <td>{{ movie.title }}</td>
+    </tr> {% if movie.year %} <tr>
+        <th>Ano:</th>
+        <td>{{ movie.year }}</td>
+    </tr> {% endif %}
+</table> <br>
+<div class="field is-grouped">
+    <div class="control"> <a class="button is-primary is-outlined is-small" href="{{ request.path }}/editar">Editar</a>
+    </div>
+</div> <a href="{{ url_for('filmes_page') }}">Voltar à lista</a> {% endblock %}

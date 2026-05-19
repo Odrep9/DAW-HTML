@@ -1,0 +1,8 @@
+{% extends "layout.html" %} {% block title %} <h2>Filmes Favoritos</h2> <a class="botao"
+    href="{{ url_for('movie_add_page') }}"> Adicionar filme </a> {% endblock %} {% block content %} {% if movies %}
+<!-- Retirei o espaço inicial e adicionei um border="1" para ver melhor a tabela -->
+<table border="1"> {% for movie_key, movie in movies %} <tr>
+        <td> <!-- Este a href cria o link clicável para a página do filme específico --> <a
+                href="{{ url_for('filme_page', movie_key=movie_key) }}">{{ movie.title }}</a> </td>
+        <td> {% if movie.year %} ({{ movie.year }}) {% endif %} </td>
+    </tr> {% endfor %} </table> {% else %} <p>Não há filmes na base de dados.</p> {% endif %} {% endblock %}

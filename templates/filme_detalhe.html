@@ -1,0 +1,13 @@
+{% extends "layout.html" %} {% block title %} <h1 class=" title ">Editar Filme</h1> {% endblock%} {% block content %}
+<form action="" method="post" name="movie_edit">
+    <div class="field"> <label for=" title ">Nome</label>
+        <div> <input type="text" name="title" class="input" required="required" value="{{ values['title'] }}" /> </div>
+    </div>
+    <div> <label for="year" class="label">Ano</label>
+        <div class="control"> <input type="number" name="year" class="input" min="{{ min_year }}" max="{{ max_year }}"
+                value="{{ values['year'] }}" /> </div>
+    </div>
+    <div>
+        <div> <button class="button is-primary is-small">Guardar</button> </div>
+    </div>
+</form> {% endblock %}
